@@ -37,30 +37,7 @@ The design focuses on improving visibility across inventory transactions while s
 
 ### **System Workflow**
 
-             SUPPLIERS
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ INBOUND RECEIPT │
-        └────────┬────────┘
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ MASTER INVENTORY│
-        └────────┬────────┘
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-   STOCK CONTROL      EXPIRY DATA
-        │                 │
-        └────────┬────────┘
-                 ▼
-          FEFO PRIORITY
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ OUTBOUND ISSUE  │
-        └─────────────────┘
+<img width="3886" height="4565" alt="Decision tree" src="https://github.com/user-attachments/assets/00f84ea5-9589-4cc8-becb-437a7fb1363d" />
 
 ---
 
