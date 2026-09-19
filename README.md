@@ -37,7 +37,9 @@ The design focuses on improving visibility across inventory transactions while s
 
 ### **System Workflow**
 
-<img width="3886" height="4565" alt="Decision tree" src="https://github.com/user-attachments/assets/00f84ea5-9589-4cc8-becb-437a7fb1363d" />
+<img width="3886" height="4565" alt="Decision tree" src="https://github.com/user-attachments/assets/00f84ea5-9589-4cc8-becb-437a7fb1363d" /><br>
+
+The workflow begins with supplier validation and inbound receipt. Where a supplier or product does not already exist in the system, the relevant master record is created before inventory is added to stock. Once inventory is recorded, expiry information supports FEFO prioritisation during outbound transactions.
 
 ---
 
@@ -103,12 +105,14 @@ Includes functionality for reviewing and managing inbound and outbound transacti
 
 ---
 
-### **Technology**
+### **Technology & Approach**
 
 **Platform:** Google AppSheet\
-**Domain:** Inventory Management / Supply Chain Operations\
-**Methodology:** FEFO (First-Expired, First-Out)\
-**Application Type:** Lightweight ERP / Business Operations Application
+**Application Type:** Inventory Management / ERP System\
+**Domain:** Supply Chain & Inventory Operations\
+**Inventory Methodology:** FEFO (First-Expired, First-Out)\
+**Design approach:** Digital workflow modelling, inventory master-data management and transaction-based stock control
+
 
 ---
 
