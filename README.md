@@ -1,5 +1,9 @@
 # Inventory-Management-ERP
-### **A lightweight inventory management ERP application designed for SMEs using Google AppSheet**
+***A lightweight ERP application for SME inventory operations, designed around FEFO inventory management.***
+
+🎥 [Watch Application Walkthrough](https://drive.google.com/file/d/1sQmxq7KAvzeuClqjZElPI4VAx4uc2tqm/view?usp=sharing)
+
+<img width="1341" height="516" alt="image" src="https://github.com/user-attachments/assets/e203d6ac-d719-4377-89a7-b1dbceaa72d0" />
 
 ### **Project Overview**
 
@@ -8,6 +12,14 @@ The Inventory Management ERP is a lightweight enterprise resource planning appli
 The application was developed using **Google AppSheet** and is structured around the **First-Expired, First-Out (FEFO)** inventory management principle, prioritising inventory with earlier expiry dates for outbound transactions.
 
 The system provides dedicated workflows for managing inbound and outbound inventory transactions while maintaining a centralised stock overview and master inventory database.
+
+---
+
+### **Why This Project?**
+
+The project was developed from an inventory and supply-chain operations perspective, with the aim of translating common inventory-control requirements into a lightweight digital system.
+
+The design focuses on improving visibility across inventory transactions while structuring key processes such as inbound receipt, stock tracking, outbound issuance, supplier management, storage-location management and expiry-based inventory control.
 
 ---
 
@@ -20,6 +32,35 @@ The system provides dedicated workflows for managing inbound and outbound invent
 - Track storage locations and stock quantities.
 - Support supplier and inventory master-data management.
 - Provide a structured digital workflow for inventory operations.
+
+---
+
+### **System Workflow**
+
+             SUPPLIERS
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ INBOUND RECEIPT │
+        └────────┬────────┘
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ MASTER INVENTORY│
+        └────────┬────────┘
+                 │
+        ┌────────┴────────┐
+        ▼                 ▼
+   STOCK CONTROL      EXPIRY DATA
+        │                 │
+        └────────┬────────┘
+                 ▼
+          FEFO PRIORITY
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ OUTBOUND ISSUE  │
+        └─────────────────┘
 
 ---
 
@@ -43,9 +84,13 @@ Records incoming inventory transactions, including:
 - Transaction type
 - Cost
 
+<img width="1917" height="655" alt="image" src="https://github.com/user-attachments/assets/63237618-f2c9-4b01-85fc-a7dcf96ebf65" /><br>
+
 **⬆️ Outbound Inventory**
 
 Supports the processing of inventory issued from stock while incorporating the FEFO principle.
+
+<img width="1917" height="407" alt="image" src="https://github.com/user-attachments/assets/65cf7c89-1b1b-4fea-95c4-cc8292668dcf" /><br>
 
 **🔄 FEFO Inventory Management**
 
@@ -59,9 +104,13 @@ Provides functionality for adding and managing suppliers.
 
 Allows storage locations to be created and incorporated into inventory records.
 
+<img width="1917" height="437" alt="image" src="https://github.com/user-attachments/assets/b69e97ae-9c36-4281-9455-e1b04042785b" /><br>
+
 **📋 Master Inventory List**
 
 Maintains central product information, including SKU/product IDs, product names, standard costs and selling prices.
+
+<img width="1067" height="640" alt="image" src="https://github.com/user-attachments/assets/3a7f00cd-91e1-42bc-a1d3-9afbf9177700" /><br>
 
 **👤 User Administration**
 
@@ -88,14 +137,12 @@ Includes functionality for reviewing and managing inbound and outbound transacti
 
 ### **Application Walkthrough**
 
-**🎥 Full Application Demonstration**
+🎥 Full Application Demonstration
 
 A complete walkthrough of the application is available here:
 
 [Watch the Inventory ERP System Walkthrough 🡥](https://drive.google.com/file/d/1sQmxq7KAvzeuClqjZElPI4VAx4uc2tqm/view?usp=sharing)
 
 The demonstration covers the application's inventory-management workflows, including stock overview, inbound transactions, inventory master data, supplier management, storage locations and transaction controls.
-
-
 
 
